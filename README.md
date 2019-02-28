@@ -12,3 +12,7 @@ Requirements for use:
 
 [`google-telegraf.conf`](./conf/google-telegraf.conf) shows the recommended Telegraf configuration.
 
+See the
+[Telegraf docs](https://github.com/influxdata/telegraf) for instructions on Telegraf
+
+
