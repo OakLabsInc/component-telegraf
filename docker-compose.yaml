@@ -1,0 +1,15 @@
+---
+version: '3'
+
+services:
+
+  fluentd:
+    build: .
+    image: index.docker.io/oaklabs/component-telegraf:${VERSION-latest}
+    volumes:
+      - ./config:/config:ro
+      - ./secrets:/secrets:ro
+    environment:
+      TELEGRAF_CONFIG: '/conf/google-telegraf.conf'
+      GOOGLE_ZONE: 'us-central1-a'
+      GOOGLE_APPLICATION_CREDENTIALS: '/secrets/default-credentials.json'
