@@ -11,5 +11,6 @@ services:
       - ./secrets:/secrets:ro
     environment:
       TELEGRAF_CONFIG: '/conf/google-telegraf.conf'
-      GOOGLE_ZONE: 'us-central1-a'
+      INFLUXDB_HOST: 'http://influxdb.oak.host:8086'
+      GOOGLE_ZONE: 'us-east1-b'
       GOOGLE_APPLICATION_CREDENTIALS: '/secrets/default-credentials.json'

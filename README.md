@@ -2,7 +2,7 @@
 
 This component uses
 [telegraf](https://docs.fluentd.org/v1.0/articles/quickstart) to send
-logs to GCP Stackdriver. It can be adapted to send logs to other
+logs to GCP InfluxDB. It can be adapted to send logs to other
 services and to receive logs from application by a variety of methods.
 
 Requirements for use:
