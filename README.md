@@ -19,9 +19,9 @@ services and to receive logs from application by a variety of methods.
 ``` json
 {
     "services": [{
-            "image": "index.docker.io/oaklabs/app-website:release-1.0.6",
+            "image": "index.docker.io/oaklabs/app-example:release-1.0.0",
             "environment": {
-                "REMOTE_URL": "https://www.zivelo.com"
+                "TZ": "America/Pheonix"
             }
         },
         {
