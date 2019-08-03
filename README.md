@@ -16,12 +16,10 @@ services and to receive logs from application by a variety of methods.
 
 ## Installation
 
-```
+``` json
 {
     "services": [{
             "image": "index.docker.io/oaklabs/app-website:release-1.0.6",
-            "username": "{{dockerUsername}}",
-            "password": "{{dockerPassword}}",
             "environment": {
                 "REMOTE_URL": "https://www.zivelo.com"
             }
@@ -41,11 +39,16 @@ services and to receive logs from application by a variety of methods.
         }
     ]
 }
+
 ```
+
 * `{{influxdbHost}}` takes a URL and port: http://influxdb.example.com:8086
+* `{{logzType}}` is a tag that allows the results to be filtered at logx.io interface
+* `{{logzToken}}` can be obtained from your logx.io account.
 
 ## Further Reading
+
 See the
 [Telegraf docs](https://github.com/influxdata/telegraf) for instructions on Telegraf.
 
-
+https://logz.io/ for free account
