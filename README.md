@@ -25,13 +25,6 @@ services and to receive logs from application by a variety of methods.
             }
         },
         {
-            "image": "index.docker.io/oaklabs/component-fluentd:logzio",
-            "environment": {
-                "LOGZ_TYPE": "{{logzType}}",
-                "LOGZ_TOKEN": "{{logzToken}}"
-            }
-        },
-        {
             "image": "index.docker.io/oaklabs/component-telegraf:demo",
             "environment": {
                 "INFLUXDB_HOST": "{{influxdbHost}}"
@@ -42,9 +35,7 @@ services and to receive logs from application by a variety of methods.
 
 ```
 
-* `{{influxdbHost}}` takes a URL and port: http://influxdb.example.com:8086
-* `{{logzType}}` is a tag that allows the results to be filtered at logx.io interface
-* `{{logzToken}}` can be obtained from your logx.io account.
+* `{{influxdbHost}}` URL must include the port: http://influxdb.example.com:8086
 
 ## Further Reading
 
