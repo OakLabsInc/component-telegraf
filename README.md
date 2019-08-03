@@ -11,7 +11,7 @@ services and to receive logs from application by a variety of methods.
 
 ## Requirements
 
-* Telegraf configuration mounted at [`/google-telegraf.conf`](./config/google-telegraf.conf)
+* Telegraf configuration mounted at [`/config/google-telegraf.conf`](./config/google-telegraf.conf)
 * GCP service account credentails mounted at [`/secrets/default-credentials.json`](./secrets/default-credentials.json)
 
 ## Installation
