@@ -21,7 +21,7 @@ services and to receive logs from application by a variety of methods.
     "services": [{
             "image": "index.docker.io/oaklabs/app-example:release-1.0.1",
             "environment": {
-                "TZ": "America/Pheonix"
+                "TZ": "America/Phoenix"
             }
         },
         {
