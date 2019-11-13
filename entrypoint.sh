@@ -1,3 +1,3 @@
 #!/bin/sh
 
-exec telegraf --config google-telegraf.conf
+exec telegraf --config ${TELEGRAF_CONFIG}

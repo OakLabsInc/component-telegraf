@@ -14,6 +14,8 @@ RUN chmod -R 0400 /secrets \
 
 ENV INFLUXDB_HOST="http://influxdb.oak.host:8086" \
     GOOGLE_ZONE="us-east1-b" \
-    GOOGLE_APPLICATION_CREDENTIALS="/secrets/default-credentials.json"
+    GOOGLE_APPLICATION_CREDENTIALS="/secrets/default-credentials.json" \
+    AWS_TOKEN: '' \
+    BUCKET: ''
 
 ENTRYPOINT [ "/entrypoint.sh" ]
