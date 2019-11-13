@@ -16,3 +16,5 @@ services:
       BUCKET: ''
       GOOGLE_ZONE: 'us-east1-b'
       GOOGLE_APPLICATION_CREDENTIALS: '/secrets/default-credentials.json'
+      INFLUXDB_ORG: ''
+      

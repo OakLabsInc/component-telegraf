@@ -16,6 +16,7 @@ ENV INFLUXDB_HOST="http://influxdb.oak.host:8086" \
     GOOGLE_ZONE="us-east1-b" \
     GOOGLE_APPLICATION_CREDENTIALS="/secrets/default-credentials.json" \
     AWS_TOKEN='' \
-    BUCKET=''
+    BUCKET='' \
+    INFLUXDB_ORG=''
 
 ENTRYPOINT [ "/entrypoint.sh" ]
